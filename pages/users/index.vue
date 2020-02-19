@@ -1,5 +1,7 @@
 <template>
-  <p>Please enter an ID</p>
+  <div>
+    <p>Please enter an ID</p>
+  </div>
 </template>
 
 <script>
