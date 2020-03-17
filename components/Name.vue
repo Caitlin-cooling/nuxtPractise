@@ -1,16 +1,16 @@
 <template>
-  <div>
+  <div class="name">
     <p>The name field is active: {{ active }}</p>
     <label for="name">Name</label>
     <input 
       type="text"
-      id="name"
-      name="name"
       @focus="active=true"
-      @blur="active=false"
     >
-    <!-- what about when the button is active? -->
-    <button v-if="active">Confirm</button>
+    <br />
+    <button
+      v-if="active"
+      @click="active=false"
+     >Confirm</button>
   </div>
 </template>
 
@@ -23,3 +23,9 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.name {
+  padding: 20px;
+}
+</style>
